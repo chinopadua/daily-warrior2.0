@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -27,7 +27,7 @@
 	<header id="header">
 		<div class="container">
 			<div class="logo">
-				<a href="index.html"><img src="static/images/logowhite.svg" class="toplogo" alt="DAILY WARRIOR"></a>
+				<a href="index3.html"><img src="static/images/logowhite.svg" class="toplogo" alt="DAILY WARRIOR"></a>
 			</div>
 			<nav class="nav" id="nav" role="navigation">
 			  <!-- Brand and toggle get grouped for better mobile display -->
@@ -42,26 +42,26 @@
 
 				 <div class="nav-drop">
 				    <ul class="nav navbar-nav">
-				    	<li class="active visible-sm visible-xs"><a href="index2.0.html">Home</a></li>
-				    	<li><a href="#">Blog</a></li>
-				    	<li><a href="faq.html">FAQ's</a></li>
+				    	<li class="visible-sm visible-xs"><a href="index3.html">Home</a></li>
+				    	<li class=""><a href="#">Blog</a></li>
+				    	<li class=""><a href="faq.html">FAQ's</a></li>
 				    </ul>
 
 				    <!-- Profile-->
 				    <ul class="nav navbar-nav navbar-right">
-				    	<li><a href="postanevent.html">Post</a></li>
+				    	<li class="active"><a href="postanevent.html">Post</a></li>
 				      	<li class="dropdown">
 				            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
 				            	<img class="img-circle profile" src="static/images/user-03.jpg" alt="budoy" width="20" />&nbsp; Budoy Ako<span class="caret"></span>
 				            </a>
 					        <ul class="dropdown-menu profilemenu" role="menu">
-						        <li><a href="profileowner.html"><i class="fa fa-user"></i>&nbsp; Profile </a></li>
-						        <li><a href="events.html"><i class="fa fa-plane"></i>&nbsp; Event</a></li>
-						        <li><a href="editprof"><i class="fa fa-wrench"></i>&nbsp; Settings</a></li>
+						        <li class=""><a href="profileowner.html"><i class="fa fa-user"></i>&nbsp; Profile </a></li>
+						        <li class=""><a href="events.html"><i class="fa fa-plane"></i>&nbsp; Event</a></li>
+						        <li class=""><a href="editprof.html"><i class="fa fa-wrench"></i>&nbsp; Settings</a></li>
 						        <li><a href="index.html"><i class="fa fa-sign-out"></i>&nbsp; Logout</a></li>
 					        </ul>
 			           	</li>
-			           	<li><a href="notifications.html"><i class="fa fa-plane"></i> <span class="badge">4</span></a></li>
+			           	<li class=""><a href="notifications.html"><i class="fa fa-plane"></i> <span class="badge">4</span></a></li>
 				    </ul>
 				    <div class="drop-holder visible-sm visible-xs">
 						<span>Follow Us</span>
@@ -79,7 +79,7 @@
 	<section class="area suggestpage">
 		<div class="alert alert-success alert-dismissible checkemail centeredtext" role="alert">
 		  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		  <strong>Thank you!</strong> your post is being reviewed. <strong>Daily Warrior</strong> will email and call you to confirm your event.
+		  <strong>Thank you!</strong> for creating an event.
 		</div>
 		<div class="container">
 			<div class="row">
@@ -87,86 +87,57 @@
 				<div class="col-md-12">
 					<section class="content form">
 							<h2 class="mainhead2"> Post an Event</h2>
-							<form action="postanevenreview.html" method="get">
+							<form action="postaneventreview.html" method="get">
 								<div class="centeredtext">
 
-									<!--Banner-->
-									<span class="input">
-										<label class="form2label form2label-content"><span>Banner (Paste <a href="https://imgur.com" class="green" target="_blank">IMGUR</a> URL here)</span></label>
-										<input class="form-control" type="url" id="banner" placeholder="Banner needs to be: 1200px x 360px">	
-									</span>	
-
 									<!--Where-->
-									<span class="input">
-										<label class="form2label form2label-content"><span>Where</span></label>
-										<input class="form-control" type="text" id="where" required placeholder="Kalanggaman Island">	
-									</span>
+									<div class="row">
+										<div class="col-sm-7 col-xs-12">
+											<span class="input">
+												<label class="form2label form2label-content"><span>Where</span></label>
+												<input class="form-control" type="text" id="where" required>	
+											</span>
+										</div>	
+
+										<!--Cost-->
+										<div class="col-sm-5 col-xs-12">
+											<span class="input">
+												<label class="form2label form2label-content"><span>Cost</span></label>
+												<div class="input-group">
+										   			<div class="input-group-addon">₱</div>
+										    		<input type="number" class="form-control" id="cost" required>
+										    	</div>	
+											</span>
+										</div>
+									</div>												
 
 									<!--Days-->
-									<span class="input">
-										<label class="form2label form2label-content"><span>Days</span></label>
-										<input class="form-control" type="text" id="days" required placeholder="3 Days & 2 Nights">	
-									</span>
-
-									<!--When-->
-									<span class="input">
-										<label class="form2label form2label-content"><span>When</span></label>
-										<input class="form-control" type="datetime-local" id="when" required>	
-									</span>	
-
-									<!--End Time-->
-									<span class="input">
-										<label class="form2label form2label-content"><span>End Time</span></label>
-										<input class="form-control" type="datetime-local" id="end" required>	
-									</span>
-
-									<!--Cost-->
-									<span class="input">
-										<label class="form2label form2label-content"><span>Cost</span></label>
-										<div class="input-group">
-								   			<div class="input-group-addon">₱</div>
-								    		<input type="number" class="form-control" id="cost" required>
-								    	</div>	
-									</span>
-
-									<!--Cost Covered-->
-										<div class="row">
+									<div class="row">
+										<div class="col-sm-2 col-xs-12">
 											<span class="input">
-												<label class="form2label form2label-content fieldnegbot"><span class="fieldneg">Cost Covered</span></label>
+												<label class="form2label form2label-content"><span>Days</span></label>
+												<input class="form-control" type="text" id="days" required>	
 											</span>
+										</div>
 
-											<div class="col-sm-6">
-												<span class="input">
-													<input class="form-control" type="text" id="needtobring" required placeholder="Environmental Fee">	
-												</span>
-
-												<span class="input">
-													<input class="form-control" type="text" id="needtobring" placeholder="Land Travel">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="text" id="needtobring" placeholder="Food Share">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="text" id="needtobring" placeholder="Boat Fare">	
-												</span>
-											</div>
-
-											<div class="col-sm-6">
-												<span class="input">
-													<input class="form-control" type="text" id="needtobring" placeholder="">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="text" id="needtobring" placeholder="">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="text" id="needtobring" placeholder="">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="text" id="needtobring" placeholder="">	
-												</span>
-											</div>
+										<!--When-->
+										<div class="col-sm-5 col-xs-12">
+											<span class="input">
+												<label class="form2label form2label-content"><span>When</span></label>
+												<input class="form-control" type="datetime-local" id="when" required>	
+											</span>
 										</div>	
-				
+									
+
+										<!--End Time-->
+										<div class="col-sm-5 col-xs-12">
+											<span class="input">
+												<label class="form2label form2label-content"><span>End Time</span></label>
+												<input class="form-control" type="datetime-local" id="end" required>	
+											</span>
+										</div>
+									</div>
+
 									<!--Heads Up-->
 									<span class="input">
 										<label class="form2label form2label-content"><span>Heads up</span></label>
@@ -174,226 +145,142 @@
 									</span>	
 
 									<!--Trip Schedule-->
-									<span class="input">
-										<label class="form2label form2label-content"><span>Trip Schedule</span></label>
+									<div class="row">
+										<div class="col-sm-12 col-xs-12">
+											<span class="input">
+												<label class="form2label form2label-content"><span>Trip Schedule</span></label>
+											</span>
+										</div>
 
 										<!--Departure-->
-										<div class="input-group marginbottom10">
-								   			<div class="input-group-addon"><i class="fa fa-plane"></i></div>
-								    		<input class="form-control" type="text" id="where" required placeholder="Departure Manila: 5 AM">
-								    	</div>
+										<div class="col-sm-6 col-xs-12">
+											<div class="input-group marginbottom10">
+										   		<div class="input-group-addon"><i class="fa fa-plane"></i></div>
+										    	<input class="form-control" type="text" id="where" required placeholder="Departure Manila: 5 AM">
+										    </div>
 
-								    	<!--ETA Arrival @Place-->
-								    	<div class="input-group marginbottom10">
-								   			<div class="input-group-addon"><i class="fa fa-map-marker"></i></div>
-								    		<input class="form-control" type="text" id="where" required placeholder="Estimated Arrival at Place: 10 AM">
-								    	</div>
-
-								    	<!--Departure @Place-->
-								    	<div class="input-group marginbottom10">
-								   			<div class="input-group-addon"><i class="fa fa-plane"></i></div>
-								    		<input class="form-control" type="text" id="where" required placeholder="Departure at Place: 11 am (Next Day)">
-								    	</div>
-
-								    	<!--ETA Arrival Back-->
-								    	<div class="input-group marginbottom10">
-								   			<div class="input-group-addon"><i class="fa fa-map-marker"></i></div>
-								    		<input class="form-control" type="text" id="where" required placeholder="Estimated Arrival in Manila: 4 PM">
-								    	</div>
-									</span>	
-
-									<!--Need to bring-->
-										<div class="row">
-											<span class="input">
-												<label class="form2label form2label-content fieldnegbot"><span class="fieldneg">Need to bring</span></label>
-											</span>
-
-											<div class="col-sm-6">
-												<span class="input">
-													<input class="form-control" type="text" id="needtobring" required placeholder="Food (Cooked or Pre-Cooked)">	
-												</span>
-
-												<span class="input">
-													<input class="form-control" type="text" id="needtobring" placeholder="Tent, Sleeping Bag">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="text" id="needtobring" placeholder="Flashlight, Headlamp">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="text" id="needtobring" placeholder="Drinking Water (Minimum of 2 liters per person)">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="text" id="needtobring" placeholder="Liquor/Beer (Optional)">	
-												</span>
-											</div>
-
-											<div class="col-sm-6">
-												<span class="input">
-													<input class="form-control" type="text" id="needtobring" placeholder="Extra Cash">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="text" id="needtobring" placeholder="">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="text" id="needtobring" placeholder="">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="text" id="needtobring" placeholder="">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="text" id="needtobring" placeholder="">	
-												</span>
-											</div>
+										    <!--ETA Arrival @Place-->
+										    <div class="input-group marginbottom10">
+										   		<div class="input-group-addon"><i class="fa fa-map-marker"></i></div>
+										    	<input class="form-control" type="text" id="where" required placeholder="Estimated Arrival at Place: 10 AM">
+										    </div>
 										</div>
 
-									<!--Island Offers-->
-										<div class="row">
-											<span class="input">
-												<label class="form2label form2label-content fieldnegbot"><span class="fieldneg">Island Offers</span></label>
-											</span>
+										<div class="col-sm-6 col-xs-12">
+										    <!--Departure @Place-->
+										    <div class="input-group marginbottom10">
+										   		<div class="input-group-addon"><i class="fa fa-plane"></i></div>
+										    	<input class="form-control" type="text" id="where" required placeholder="Departure at Place: 11 am (Next Day)">
+										    </div>
 
-											<div class="col-sm-6">
-												<span class="input">
-													<input class="form-control" type="text" id="islandoffers" required placeholder="Fishing">	
-												</span>
+										    <!--ETA Arrival Back-->
+										    <div class="input-group marginbottom10">
+										   		<div class="input-group-addon"><i class="fa fa-map-marker"></i></div>
+										    	<input class="form-control" type="text" id="where" required placeholder="Estimated Arrival in Manila: 4 PM">
+										    </div>
+										</div>
+									</div>	
 
-												<span class="input">
-													<input class="form-control" type="text" id="islandoffers" placeholder="Island Hopping">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="text" id="islandoffers" placeholder="Surfing (Seasonal)">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="text" id="islandoffers" placeholder="Snorkeling">	
-												</span>
-
-												<span class="input">
-													<input class="form-control" type="text" id="islandoffers" placeholder="Wake Boarding">	
-												</span>
-											</div>
-
-											<div class="col-sm-6">
-
-												<span class="input">
-													<input class="form-control" type="text" id="islandoffers" placeholder="Skim Board">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="text" id="islandoffers" placeholder="Bar">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="text" id="islandoffers" placeholder="Videoke">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="text" id="islandoffers" placeholder="">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="text" id="islandoffers" placeholder="">	
-												</span>
-											</div>
+									<!--Cost Covered-->
+									<div class="row">
+										<div class="col-sm-6 col-xs-12">
+											<form method="POST">
+											     <label class="form2label form2label-content"><span>Cost Covered</span> (click + to add more)</label>
+											    <div id="dynamicInput">
+											     	<div class="input-group" type="button">
+														<div class="input-group-addon arrow" value="Add" onClick="addInput('dynamicInput');"><i class="fa fa-plus"></i></div>
+														<input class="form-control" class="form-control" id="costcovered" type="text" name="myInputs[]">
+													</div>
+											    </div>
+											</form>
 										</div>
 
-									<!--Optional Expense-->
-										<div class="row">
-											<span class="input">
-												<label class="form2label form2label-content fieldnegbot"><span class="fieldneg">Optional Expense</span></label>
-											</span>
+										<!--Need to bring-->
+										<div class="col-sm-6 col-xs-12">
+											<form method="POST">
+											    <label class="form2label form2label-content"><span>Excluded (optional)</span></label>
+											    <div id="dynamicInput2">
+											     	<div class="input-group" type="button">
+														<div class="input-group-addon arrow" value="Add" onClick="addInput('dynamicInput2');"><i class="fa fa-plus"></i></div>
+														<input class="form-control" class="form-control" id="costcovered" type="text" name="myInputs[]">
+													</div>
+											    </div>
+											</form>
+										</div>
+									</div>
 
-											<div class="col-sm-6">
-												<span class="input">
-													<input class="form-control" type="text" id="optionalexpense" placeholder="₱ 1500 - Kubo (2-4pax) w/ balcony and wall fan">	
-												</span>
-
-												<span class="input">
-													<input class="form-control" type="text" id="optionalexpense" placeholder="₱ 2000 - Kubo (6pax) w/ celling fan">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="text" id="optionalexpense" placeholder="₱ 2500 - Air conditioned Room (2-4 person)">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="text" id="optionalexpense" placeholder="₱ 3500 - P4000 - Air conditioned Rooms (6-8 person)">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="text" id="optionalexpense" placeholder=" ₱ 1200 to 1500 - Island Hopping for (8-10 person)">	
-												</span>
-											</div>
-
-											<div class="col-sm-6">
-												<span class="input">
-													<input class="form-control" type="text" id="optionalexpense" placeholder="₱ 200 - Kayaking (Single)">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="text" id="optionalexpense" placeholder="₱ 300 - Kayaking (Double)">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="text" id="optionalexpense" placeholder="">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="text" id="optionalexpense" placeholder="">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="text" id="optionalexpense" placeholder="">	
-												</span>
-											</div>
+									<!--Need to Bring-->
+									<div class="row">
+										<div class="col-sm-4 col-xs-12">
+											<form method="POST">
+											    <label class="form2label form2label-content"><span>Need to Bring</span></label>
+											    <div id="dynamicInput3">
+											     	<div class="input-group" type="button">
+														<div class="input-group-addon arrow" value="Add" onClick="addInput('dynamicInput3');"><i class="fa fa-plus"></i></div>
+														<input class="form-control" class="form-control" id="costcovered" type="text" name="myInputs[]">
+													</div>
+											    </div>
+											</form>
 										</div>
 
-										<!--The Place-->
-										<div class="row">
-											<span class="input">
-												<label class="form2label form2label-content fieldnegbot"><span class="fieldneg">The Place (Paste (Paste <a href="https://imgur.com" class="green" target="_blank">IMGUR</a> URL here)</span></label>
-											</span>
-
-											<div class="col-sm-6">
-												<span class="input">
-													<input class="form-control" type="url" id="optionalexpense" placeholder="Best size (960 x 640)">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="url" id="optionalexpense" placeholder="Best size (960 x 640)">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="url" id="optionalexpense" placeholder="Best size (960 x 640)">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="url" id="optionalexpense" placeholder="Best size (960 x 640)">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="url" id="optionalexpense" placeholder="Best size (960 x 640)">	
-												</span>
-											</div>
-
-											<div class="col-sm-6">
-												<span class="input">
-													<input class="form-control" type="url" id="optionalexpense" placeholder="Best size (960 x 640)">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="url" id="optionalexpense" placeholder="Best size (960 x 640)">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="url" id="optionalexpense" placeholder="Best size (960 x 640)">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="url" id="optionalexpense" placeholder="Best size (960 x 640)">	
-												</span>
-												<span class="input">
-													<input class="form-control" type="url" id="optionalexpense" placeholder="Best size (960 x 640)">	
-												</span>
-											</div>
+										<!--Island Offers-->
+										<div class="col-sm-4 col-xs-12">
+											<form method="POST">
+											    <label class="form2label form2label-content"><span>Things you can do</span></label>
+											    <div id="dynamicInput4">
+											     	<div class="input-group" type="button">
+														<div class="input-group-addon arrow" value="Add" onClick="addInput('dynamicInput4');"><i class="fa fa-plus"></i></div>
+														<input class="form-control" class="form-control" id="costcovered" type="text" name="myInputs[]">
+													</div>
+											    </div>
+											</form>
 										</div>
+
+										<!--Need to bring-->
+										<div class="col-sm-4 col-xs-12">
+											<form method="POST">
+											    <label class="form2label form2label-content"><span>Optional Expense</span></label>
+											    <div id="dynamicInput5">
+											     	<div class="input-group" type="button">
+														<div class="input-group-addon arrow" value="Add" onClick="addInput('dynamicInput5');"><i class="fa fa-plus"></i></div>
+														<input class="form-control" class="form-control" id="costcovered" type="text" name="myInputs[]">
+													</div>
+											    </div>
+											</form>
+										</div>
+									</div>
+
+
+									<!--The Place-->
+										
 
 									<!--Meeting Place-->
-									<span class="input">
-										<label class="form2label form2label-content"><span>Meeting Place & Time</span></label>
-										<input class="form-control" type="text" id="meeting" required placeholder="Trinoma Parking Lot - 3AM">	
-									</span>
+									<div class="row">
+										<div class="col-sm-4 col-xs-12">
+											<span class="input">
+												<label class="form2label form2label-content"><span>Meeting Place</span></label>
+												<input class="form-control" type="text" id="meeting" required>	
+											</span>
+										</div>
 
-									<!--Meeting Place URL-->
-									<span class="input">
-										<label class="form2label form2label-content"><span>Google Map URL</span></label>
-										<input class="form-control" type="url" id="googleurl" placeholder="https://www.google.com/maps/d/u/0/embed?mid=zk5jyOXF3hb4.keAG7ybEgOj0">	
-									</span>
-		
+										<div class="col-sm-4 col-xs-12">
+											<span class="input">
+												<label class="form2label form2label-content"><span>Time</span></label>
+												<input class="form-control" type="time" id="meetingtime" required >	
+											</span>
+										</div>
 
-									<a href="thankyou.html">
-										<button type="submit" class="btn btn-success margintop20">Warrior Attack!</button>
+										<!--Meeting Place URL-->
+										<div class="col-sm-4 col-xs-12">
+											<span class="input">
+												<label class="form2label form2label-content"><span>Google Map URL</span></label>
+												<input class="form-control" type="url" id="googleurl" placeholder="https://www.google.com/maps/d/u/0/embed?mid=zk5jyOXF3hb4.keAG7ybEgOj0">	
+											</span>
+										</div>	
+									</div>
+
+									<a href="#">
+										<button type="submit" id="postsend" class="btn btn-success mostbtn">Warrior Attack!</button>
 									</a>
 
 								</div>
@@ -444,41 +331,5 @@
 <script src="static/js/bootstrap.js"></script>
 <script src="static/js/jquery.main.js"></script>
 <script src="static/js/classie.js"></script>
-<script>
-	(function() {
-	// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
-	if (!String.prototype.trim) {
-		(function() {
-		// Make sure we trim BOM and NBSP
-			var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
-			String.prototype.trim = function() {
-			return this.replace(rtrim, '');
-			};
-		})();
-	}
-
-	[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
-	// in case the input is already filled..
-	if( inputEl.value.trim() !== '' ) {
-						classie.add( inputEl.parentNode, 'input--filled' );
-	}
-
-	// events:
-	inputEl.addEventListener( 'focus', onInputFocus );
-	inputEl.addEventListener( 'blur', onInputBlur );
-	} );
-
-	function onInputFocus( ev ) {
-		classie.add( ev.target.parentNode, 'input--filled' );
-	}
-
-	function onInputBlur( ev ) {
-		if( ev.target.value.trim() === '' ) {
-							classie.remove( ev.target.parentNode, 'input--filled' );
-			}
-		}
-	})();
-</script>
-<script src="static/js/imgs.js"></script>
 </body>
 </html>
