@@ -37,26 +37,20 @@
 
 				  	<!-- Search -->
 				    <div class="searchbar col-md-3 col-sm-5 col-xs-4">
-				        <div id="sb-search" class="sb-search">
-						<form>
-							<input class="sb-search-input" placeholder="Search" type="text" value="" name="search" id="search">
-							<input class="sb-search-submit" type="submit" value="">
-							<span class="sb-icon-search"></span>
-						</form>
-						</div>
+        				<input type="text" class="form-control input-sm searchnav" placeholder="Search">
 				    </div>
 
 				 <div class="nav-drop">
 				    <ul class="nav navbar-nav">
-				    	<li class="active visible-sm visible-xs"><a href="index.html">Home</a></li>
-				    	<li><a href="#">Blog</a></li>
-				    	<li><a href="faq.html">FAQ's</a></li>
+				    	<li class="visible-sm visible-xs"><a href="index.html">Home</a></li>
+				    	<li class=""><a href="#">Blog</a></li>
+				    	<li class=""><a href="faq.html">FAQ's</a></li>
 				    </ul>
 
 				    <!-- Profile-->
 				    <ul class="nav navbar-nav navbar-right">
-				    	<li><a href="postanevent.html">Post</a></li>
-				    	<li><a href="login.html"><i class="fa fa-unlock"></i> Login</a></li>
+				    	<li class=""><a href="postanevent.html">Post</a></li>
+				    	<li class="active"><a href="login.html"><i class="fa fa-unlock"></i> Login</a></li>
 				    </ul>
 				    <div class="drop-holder visible-sm visible-xs">
 						<span>Follow Us</span>
@@ -95,8 +89,7 @@
 				</form>
 			</section>
 		</div>   
-	</section>		
-									
+	</section>						
 	<footer id="footer">
 		<div class="container">
 			<div class="footer-holder">
@@ -137,43 +130,5 @@
 <script src="static/js/bootstrap.js"></script>
 <script src="static/js/jquery.main.js"></script>
 <script src="static/js/classie.js"></script>
-<script>
-	(function() {
-	// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
-	if (!String.prototype.trim) {
-		(function() {
-		// Make sure we trim BOM and NBSP
-			var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
-			String.prototype.trim = function() {
-			return this.replace(rtrim, '');
-			};
-		})();
-	}
-
-	[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
-	// in case the input is already filled..
-	if( inputEl.value.trim() !== '' ) {
-						classie.add( inputEl.parentNode, 'input--filled' );
-	}
-
-	// events:
-	inputEl.addEventListener( 'focus', onInputFocus );
-	inputEl.addEventListener( 'blur', onInputBlur );
-	} );
-
-	function onInputFocus( ev ) {
-		classie.add( ev.target.parentNode, 'input--filled' );
-	}
-
-	function onInputBlur( ev ) {
-		if( ev.target.value.trim() === '' ) {
-							classie.remove( ev.target.parentNode, 'input--filled' );
-			}
-		}
-	})();
-</script>
-<script>
-	new UISearch( document.getElementById( 'sb-search' ) );
-</script>
 </body>
 </html>

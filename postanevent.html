@@ -27,7 +27,7 @@
 	<header id="header">
 		<div class="container">
 			<div class="logo">
-				<a href="index.html"><img src="static/images/logowhite.svg" class="toplogo" alt="DAILY WARRIOR"></a>
+				<a href="index3.html"><img src="static/images/logowhite.svg" class="toplogo" alt="DAILY WARRIOR"></a>
 			</div>
 			<nav class="nav" id="nav" role="navigation">
 			  <!-- Brand and toggle get grouped for better mobile display -->
@@ -37,37 +37,31 @@
 
 				  	<!-- Search -->
 				    <div class="searchbar col-md-3 col-sm-5 col-xs-4">
-				        <div id="sb-search" class="sb-search">
-						<form>
-							<input class="sb-search-input" placeholder="Search" type="text" value="" name="search" id="search">
-							<input class="sb-search-submit" type="submit" value="">
-							<span class="sb-icon-search"></span>
-						</form>
-						</div>
+        				<input type="text" class="form-control input-sm searchnav" placeholder="Search">
 				    </div>
 
 				 <div class="nav-drop">
 				    <ul class="nav navbar-nav">
-				    	<li class="active visible-sm visible-xs"><a href="index2.0.html">Home</a></li>
-				    	<li><a href="#">Blog</a></li>
-				    	<li><a href="faq.html">FAQ's</a></li>
+				    	<li class="visible-sm visible-xs"><a href="index3.html">Home</a></li>
+				    	<li class=""><a href="#">Blog</a></li>
+				    	<li class=""><a href="faq.html">FAQ's</a></li>
 				    </ul>
 
 				    <!-- Profile-->
 				    <ul class="nav navbar-nav navbar-right">
-				    	<li><a href="postanevent.html">Post</a></li>
+				    	<li class="active"><a href="postanevent.html">Post</a></li>
 				      	<li class="dropdown">
 				            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-				            	<img class="img-circle profile" src="static/images/user-03.jpg" alt="budoy" width="20" />&nbsp; Budoy <span class="caret"></span>
+				            	<img class="img-circle profile" src="static/images/user-03.jpg" alt="budoy" width="20" />&nbsp; Budoy Ako<span class="caret"></span>
 				            </a>
 					        <ul class="dropdown-menu profilemenu" role="menu">
-						        <li><a href="profile.html"><i class="fa fa-user"></i>&nbsp; Profile </a></li>
-						        <li><a href="events.html"><i class="fa fa-plane"></i>&nbsp; Event</a></li>
-						        <li><a href="#"><i class="fa fa-wrench"></i>&nbsp; Settings</a></li>
+						        <li class=""><a href="profileowner.html"><i class="fa fa-user"></i>&nbsp; Profile </a></li>
+						        <li class=""><a href="events.html"><i class="fa fa-plane"></i>&nbsp; Event</a></li>
+						        <li class=""><a href="editprof.html"><i class="fa fa-wrench"></i>&nbsp; Settings</a></li>
 						        <li><a href="index.html"><i class="fa fa-sign-out"></i>&nbsp; Logout</a></li>
 					        </ul>
 			           	</li>
-			           	<li><a href="notifications.html"><i class="fa fa-plane"></i> <span class="badge">4</span></a></li>
+			           	<li class=""><a href="notifications.html"><i class="fa fa-plane"></i> <span class="badge">4</span></a></li>
 				    </ul>
 				    <div class="drop-holder visible-sm visible-xs">
 						<span>Follow Us</span>
@@ -94,7 +88,7 @@
 
 									<!--Where-->
 									<div class="row">
-										<div class="col-xs-7">
+										<div class="col-sm-7 col-xs-12">
 											<span class="input">
 												<label class="form2label form2label-content"><span>Where</span></label>
 												<input class="form-control" type="text" id="where" required>	
@@ -102,7 +96,7 @@
 										</div>	
 
 										<!--Cost-->
-										<div class="col-xs-5">
+										<div class="col-sm-5 col-xs-12">
 											<span class="input">
 												<label class="form2label form2label-content"><span>Cost</span></label>
 												<div class="input-group">
@@ -115,7 +109,7 @@
 
 									<!--Days-->
 									<div class="row">
-										<div class="col-xs-2">
+										<div class="col-sm-2 col-xs-12">
 											<span class="input">
 												<label class="form2label form2label-content"><span>Days</span></label>
 												<input class="form-control" type="text" id="days" required>	
@@ -123,7 +117,7 @@
 										</div>
 
 										<!--When-->
-										<div class="col-xs-5">
+										<div class="col-sm-5 col-xs-12">
 											<span class="input">
 												<label class="form2label form2label-content"><span>When</span></label>
 												<input class="form-control" type="datetime-local" id="when" required>	
@@ -132,7 +126,7 @@
 									
 
 										<!--End Time-->
-										<div class="col-xs-5">
+										<div class="col-sm-5 col-xs-12">
 											<span class="input">
 												<label class="form2label form2label-content"><span>End Time</span></label>
 												<input class="form-control" type="datetime-local" id="end" required>	
@@ -148,14 +142,14 @@
 
 									<!--Trip Schedule-->
 									<div class="row">
-										<div class="col-xs-12">
+										<div class="col-sm-12 col-xs-12">
 											<span class="input">
 												<label class="form2label form2label-content"><span>Trip Schedule</span></label>
 											</span>
 										</div>
 
 										<!--Departure-->
-										<div class="col-xs-6">
+										<div class="col-sm-6 col-xs-12">
 											<div class="input-group marginbottom10">
 										   		<div class="input-group-addon"><i class="fa fa-plane"></i></div>
 										    	<input class="form-control" type="text" id="where" required placeholder="Departure Manila: 5 AM">
@@ -168,7 +162,7 @@
 										    </div>
 										</div>
 
-										<div class="col-xs-6">
+										<div class="col-sm-6 col-xs-12">
 										    <!--Departure @Place-->
 										    <div class="input-group marginbottom10">
 										   		<div class="input-group-addon"><i class="fa fa-plane"></i></div>
@@ -185,9 +179,9 @@
 
 									<!--Cost Covered-->
 									<div class="row">
-										<div class="col-sm-6">
+										<div class="col-sm-6 col-xs-12">
 											<form method="POST">
-											     <label class="form2label form2label-content"><span>Cost Covered</span></label>
+											     <label class="form2label form2label-content"><span>Cost Covered</span> (click + to add more)</label>
 											    <div id="dynamicInput">
 											     	<div class="input-group" type="button">
 														<div class="input-group-addon arrow" value="Add" onClick="addInput('dynamicInput');"><i class="fa fa-plus"></i></div>
@@ -198,7 +192,7 @@
 										</div>
 
 										<!--Need to bring-->
-										<div class="col-sm-6">
+										<div class="col-sm-6 col-xs-12">
 											<form method="POST">
 											    <label class="form2label form2label-content"><span>Excluded (optional)</span></label>
 											    <div id="dynamicInput2">
@@ -213,7 +207,7 @@
 
 									<!--Need to Bring-->
 									<div class="row">
-										<div class="col-sm-4">
+										<div class="col-sm-4 col-xs-12">
 											<form method="POST">
 											    <label class="form2label form2label-content"><span>Need to Bring</span></label>
 											    <div id="dynamicInput3">
@@ -226,7 +220,7 @@
 										</div>
 
 										<!--Island Offers-->
-										<div class="col-sm-4">
+										<div class="col-sm-4 col-xs-12">
 											<form method="POST">
 											    <label class="form2label form2label-content"><span>Things you can do</span></label>
 											    <div id="dynamicInput4">
@@ -239,7 +233,7 @@
 										</div>
 
 										<!--Need to bring-->
-										<div class="col-sm-4">
+										<div class="col-sm-4 col-xs-12">
 											<form method="POST">
 											    <label class="form2label form2label-content"><span>Optional Expense</span></label>
 											    <div id="dynamicInput5">
@@ -258,14 +252,14 @@
 
 									<!--Meeting Place-->
 									<div class="row">
-										<div class="col-xs-4">
+										<div class="col-sm-4 col-xs-12">
 											<span class="input">
 												<label class="form2label form2label-content"><span>Meeting Place</span></label>
 												<input class="form-control" type="text" id="meeting" required>	
 											</span>
 										</div>
 
-										<div class="col-xs-4">
+										<div class="col-sm-4 col-xs-12">
 											<span class="input">
 												<label class="form2label form2label-content"><span>Time</span></label>
 												<input class="form-control" type="time" id="meetingtime" required >	
@@ -273,7 +267,7 @@
 										</div>
 
 										<!--Meeting Place URL-->
-										<div class="col-xs-4">
+										<div class="col-sm-4 col-xs-12">
 											<span class="input">
 												<label class="form2label form2label-content"><span>Google Map URL</span></label>
 												<input class="form-control" type="url" id="googleurl" placeholder="https://www.google.com/maps/d/u/0/embed?mid=zk5jyOXF3hb4.keAG7ybEgOj0">	

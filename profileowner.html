@@ -42,7 +42,7 @@
 
 				 <div class="nav-drop">
 				    <ul class="nav navbar-nav">
-				    	<li class="active visible-sm visible-xs"><a href="index3.html">Home</a></li>
+				    	<li class="visible-sm visible-xs"><a href="index3.html">Home</a></li>
 				    	<li class=""><a href="#">Blog</a></li>
 				    	<li class=""><a href="faq.html">FAQ's</a></li>
 				    </ul>
@@ -50,12 +50,12 @@
 				    <!-- Profile-->
 				    <ul class="nav navbar-nav navbar-right">
 				    	<li class=""><a href="postanevent.html">Post</a></li>
-				      	<li class="dropdown">
+				      	<li class="dropdown active">
 				            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
 				            	<img class="img-circle profile" src="static/images/user-03.jpg" alt="budoy" width="20" />&nbsp; Budoy Ako<span class="caret"></span>
 				            </a>
-					        <ul class="dropdown-menu profilemenu" role="menu">
-						        <li class=""><a href="profileowner.html"><i class="fa fa-user"></i>&nbsp; Profile </a></li>
+					        <ul class="active dropdown-menu profilemenu" role="menu">
+						        <li class="active"><a href="profileowner.html"><i class="fa fa-user"></i>&nbsp; Profile </a></li>
 						        <li class=""><a href="events.html"><i class="fa fa-plane"></i>&nbsp; Event</a></li>
 						        <li class=""><a href="editprof.html"><i class="fa fa-wrench"></i>&nbsp; Settings</a></li>
 						        <li><a href="index.html"><i class="fa fa-sign-out"></i>&nbsp; Logout</a></li>
@@ -76,19 +76,94 @@
 
 		</div>
 	</header>
-	<section class="main">
+	<section class="profilepage">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-offset-1 col-md-10">
-					<h2 class="mainhead"><i class="fa fa-rocket"></i> Upcoming travels</h2>
+				<div class="col-sm-3 col-xs-5 centered">
+					<input class="img-circle profilebig" data-toggle="tooltip" data-placement="bottom" title="Upload Profile Picture" type="image" src="static/images/user-04.jpg" width="150px"/>
+    				<input type="file" id="my_file" style="display: none;" />
+				</div>
+				<div class="col-sm-9 col-xs-7 profileinfo">
+					<h2 class="nameprofile"> Budoy Ako </h2>
+					<p class="bio"> Recent communications college grad who practices travel photography excels at social media management and promotion. Follow me on instagram @budoyako (150 characters only)</p>
+					<h4 class="totaltravelsprofile"> Total Travels: <a href="#" class="green">2</a></h4>
+				</div>
+			</div>	
+		</div>		
+	</section>
+
+
+
+	<hr>
+
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+					<div class="editbuttons"><a href="editprof.html" class="btn profilebtn">Edit Profile</a></div>
+			</div>
+		</div>
+	</div>
+
+	<section class="area4">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="mainhead4"><i class="fa fa-suitcase"></i> Your Events</h2>
+
+					<table class="events2">
+						<thead>
+							<tr>
+								<th class="yourevents">Place</th>
+								<th class="yourevents">Date</th>
+								<th class="yourevents">Days</th>
+								<th class="yourevents">Cost</th>
+								<th class="yourevents">Joined</th>
+								<th class="yourevents">Days Left</th>
+							</tr>
+						</thead>
+						<tbody>
+
+							<tr class="tableclick" onclick="window.document.location='post2.html';">
+								<td class="event"> Cagbalete Island </td>
+								<td class="date">June 27, 2015 - June 28, 2015</td>
+								<td class="day">1 Day</td>
+								<td class="cost">₱ 800.00</td>
+								<td class="joined">4/10</td>
+								<td class="daysleft">5 Days to go</td>
+							</tr>
+
+							<tr class="tableclick" onclick="window.document.location='post2.html';">
+								<td class="event"> Cagbalete Island </td>
+								<td class="date">June 27, 2015 - June 28, 2015</td>
+								<td class="day">1 Day</td>
+								<td class="cost">₱ 800.00</td>
+								<td class="joined">4/10</td>
+								<td class="daysleft">30 Days to go</td>
+							</tr>
+							<tr class="tableclick" onclick="window.document.location='#';">
+								<td class="event"> Pico De Loro </td>
+								<td class="date">October 1, 2015 - October 3, 2015</td>
+								<td class="day">3 Days</td>
+								<td class="cost">₱ 1200.00</td>
+								<td class="joined red">10/10</td>
+								<td class="daysleft">40 Days to go</td>
+							</tr>
+						
+						</tbody>
+					</table>
+					
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="area">
+
+	<section class="area4">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
+					<h2 class="mainhead4"><i class="fa fa-plane"></i> Upcoming travels</h2>
+
 					<table class="events">
 						<thead>
 							<tr>
@@ -97,69 +172,51 @@
 								<th>Days</th>
 								<th>Cost</th>
 								<th>Joined</th>
-								<th></th>
+								<th>Days Left</th>
 							</tr>
 						</thead>
 						<tbody>
 
-							<tr class="tableclick" onclick="window.document.location='post.html';">
-								<td class="event"> Cagbalete Island <span class="label label-warning">DW</span></td>
-								<td class="date">June 27, 2015 - June 29, 2015</td>
-								<td class="day">3 Days</td>
-								<td class="cost">₱ 1200.00</td>
+							<tr class="tableclick" onclick="window.document.location='post2.html';">
+								<td class="event"> Cagbalete Island </td>
+								<td class="date">June 27, 2015 - June 28, 2015</td>
+								<td class="day">1 Day</td>
+								<td class="cost">₱ 800.00</td>
 								<td class="joined">4/10</td>
-								<td class="join"><a href="post.html" class="btn btn-info join">Join </a></td>
+								<td class="daysleft">5 Days to go</td>
 							</tr>
 
-							<tr class="tableclick" onclick="window.document.location='post.html';">
-								<td class="event"> Cagbalete Island <span class="label label-info">Verified</span></td>
-								<td class="date">June 27, 2015 - June 29, 2015</td>
-								<td class="day">3 Days</td>
-								<td class="cost">₱ 1200.00</td>
+							<tr class="tableclick" onclick="window.document.location='post2.html';">
+								<td class="event"> Cagbalete Island </td>
+								<td class="date">June 27, 2015 - June 28, 2015</td>
+								<td class="day">1 Day</td>
+								<td class="cost">₱ 800.00</td>
 								<td class="joined">4/10</td>
-								<td class="join"><a href="post.html" class="btn btn-info join">Join </a></td>
+								<td class="daysleft">30 Days to go</td>
 							</tr>
-							<tr class="tableclick" onclick="window.document.location='post.html';">
-								<td class="event"> Pico De Loro <span class="label label-danger">Full</span></td>
+							<tr class="tableclick" onclick="window.document.location='#';">
+								<td class="event"> Pico De Loro </td>
 								<td class="date">October 1, 2015 - October 3, 2015</td>
 								<td class="day">3 Days</td>
 								<td class="cost">₱ 1200.00</td>
 								<td class="joined red">10/10</td>
-								<td class="join"><a href="#" class="btn btn-danger join">Join </a></td>
+								<td class="daysleft">40 Days to go</td>
 							</tr>
 						
 						</tbody>
 					</table>
-
-		<!--PAGINATION   <nav class="centered margintop100"> 
-					  <ul class="pagination"> 
-					    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-					    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-					    <li><a href="#">2</a></li>
-					    <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-					  </ul>
-					</nav>    -->
 					
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="pasttravels">
+	<section class="area4 marginbottom60">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2 class="mainhead2"> Past Destinations</h2>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="area marginbottom30">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<table class="events">
+					<h2 class="mainhead4"><i class="fa fa-check"></i> Successful Travels</h2>
+					<table class="events3">
 						<thead>
 							<tr>
 								<th class="past">Place</th>
@@ -190,17 +247,6 @@
 			</div>
 		</div>	
 	</section>
-
-<!--	<section class="area bg-semiwhite">
-		<div class="container featured">
-			<div class="row">
-				<div class="col-sm-12">
-					<h4 class="mainhead2"><i class="fa fa-star yellow marginbottom10"></i> Featured this week </h4>
-					<a href="past.html"><img src="http://i.imgur.com/huB3h9U.jpg" class="responsive"></a>
-				</div>
-			</div>
-		</div> 
-	</section> -->
 	
 	<footer id="footer">
 		<div class="container">

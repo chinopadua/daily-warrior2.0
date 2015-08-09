@@ -121,124 +121,6 @@ p {
   .dropdown-menu > li > a:hover {
     color: #05b68d;
   }
-
-  /* SearchNAV */
-
-  .searchnav {
-    display: block;
-  }
-
-  .sb-search {
-  margin-top: 12px;
-  position: relative;
-  min-width: 40px;
-  height: 40px;
-  float: right;
-  overflow: hidden;
-  -webkit-transition: width 0.3s;
-  -moz-transition: width 0.3s;
-  transition: width 0.3s;
-  -webkit-backface-visibility: hidden;
-  width: 100%;
-}
-
-.sb-search-input {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: none;
-  outline: none;
-  background: #fff;
-  width: 100%;
-  height: 40px;
-  margin: 0;
-  z-index: 10;
-  padding: 20px 10px 20px 10px;
-  font-family: inherit;
-  font-size: 1em;
-  color: #000000;
-}
-
-.sb-search-input::-webkit-input-placeholder {
-  color: #ccc;
-}
-
-.sb-search-input:-moz-placeholder {
-  color: #ccc;
-}
-
-.sb-search-input::-moz-placeholder {
-  color: #ccc;
-}
-
-.sb-search-input:-ms-input-placeholder {
-  color: #ccc;
-}
-
-.sb-icon-search,
-.sb-search-submit  {
-  width: 40px;
-  height: 40px;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 0;
-  margin: 0;
-  line-height: 40px;
-  text-align: center;
-  cursor: pointer;;
-}
-
-.sb-search-submit {
-  background: #fff; /* IE needs this */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
-    filter: alpha(opacity=0); /* IE 5-7 */
-    opacity: 0;
-  color: transparent;
-  border: none;
-  outline: none;
-  z-index: 90;
-}
-
-.sb-icon-search {
-  color: #fff;
-  background: #05B68D;
-  z-index: 90;
-  font-size: 1em;
-  font-family: 'FontAwesome';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  -webkit-font-smoothing: antialiased;
-}
-
-.sb-icon-search:before {
-  content: "\f002";
-}
-
-/* Open state */
-.sb-search.sb-search-open,
-.no-js .sb-search {
-  width: 100%;
-}
-
-.sb-search.sb-search-open .sb-icon-search,
-.no-js .sb-search .sb-icon-search {
-  background: #05B68D;
-  color: #fff;
-  z-index: 11;
-}
-
-.sb-search.sb-search-open .sb-search-submit,
-.no-js .sb-search .sb-search-submit {
-  z-index: 90;
-}
-
-/* ///////////SearchNAV*/
-
   
   #nav li {
     display: inline-block;
@@ -265,7 +147,6 @@ p {
   left: 3px;
   right: 3px;
   height: 3px;
-  margin-top: -2px;
   /* height/2 */
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear; }
@@ -482,9 +363,16 @@ p {
 
   .area2 h2 {
     font-size: 4rem;
-    line-height: 1.107; }     
+    line-height: 1.107; }  
 
+.area4 {
+  padding: 0px 0 47px;
+}  
 
+  .area4 h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  }  
 
 .slide-holder {
   padding: 0 0 0 65px; }
@@ -896,6 +784,10 @@ p {
     line-height: 23px;
     color:#D0D0D0; }
 
+  .textleft {
+    float:left;
+  }      
+
 
   @media only screen and (max-width: 1280px) {
 
@@ -929,7 +821,7 @@ p {
     }
 
     hr {
-      max-width: 90%;
+      max-width: 95%;
     }
 
     .suggestpage {
@@ -970,6 +862,9 @@ p {
 
    @media only screen and (max-width: 768px) {
 
+    .profilebtn {
+      font-size: 90%;
+     }
 
     .profilebig {
       max-width: 110px;
@@ -985,7 +880,8 @@ p {
     }
 
     .nameprofile {
-      font-size: 1.7em;
+      font-size: 26px;
+      margin-top: 24px; 
     }
 
     .landinglogo {
@@ -1073,8 +969,9 @@ p {
 @media only screen and (max-width: 468px) {
 
     .profilebig {
-      max-width: 100px;
+      max-width: 80px;
       margin-top: 16px;
+      margin-right: 10px;
     }
 
   }
@@ -1091,11 +988,23 @@ p {
     float: right; 
   }
 
+  .searchnav {
+    margin-top: 16px;
+  }
+
 }
 
 
 /* MENU CHANGE*/
 @media only screen and (max-width: 992px) { 
+
+  .searchnav {
+  margin-top: 7px;
+}
+
+  .editprofileforms {
+    margin-top: 50px;
+  }
 
   .profilepage {
       margin-top: 30px;
@@ -1106,24 +1015,8 @@ p {
     font-size: 1.8em;
   }
 
-  .sb-search {
-    width:0%;
-  }
-
-  .sb-search-submit {
-  background: #fff; /* IE needs this */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
-    filter: alpha(opacity=0); /* IE 5-7 */
-    opacity: 0;
-  color: transparent;
-  border: none;
-  outline: none;
-  z-index: -1;
-}
-
 .searchbar {
   float: right;
-  font-size: 0.7em;
 }
 
 .suggestpage {
@@ -1218,8 +1111,8 @@ p {
     display: inline-block;
     vertical-align: top;
     position: relative;
-    padding: 0 0 0 25px;
-    margin: 4px 25px 0; }
+    padding: 0 0 0 22px;
+    margin: 4px 23px 0 10px; }
     .opener-holder:before {
       position: absolute;
       content: "";
@@ -1378,6 +1271,11 @@ p {
     font-size: 4.8rem;
     line-height: 1.125; }
 
+  .area4 h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
   .cycle-gallery {
     margin: 0 0 30px;
     padding: 85px 35px 0;
@@ -1504,6 +1402,14 @@ p {
 
 @media only screen and (max-width: 479px) {
 
+  .textleft {
+    float: none;
+  }
+
+  .nameprofile {
+      font-size: 22px;
+      margin-top: 24px;
+    }
 
    #header .logo {
       margin: 7px 2px 10px 8px;
@@ -1530,7 +1436,8 @@ p {
 
   .opener-holder {
     margin: 4px 10px;
-    padding: 0 0 0 10px; }
+    padding: 0 0 0 23px;
+  }
 
 
   .toplogo {
@@ -1713,6 +1620,16 @@ p {
   width: 100%;
 }
 
+.events2 {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+.events3 {
+    margin: 0 auto;
+    width: 100%;
+  }
+
 thead {
   font-size: 1em;
 }
@@ -1744,6 +1661,14 @@ tbody tr:nth-child(2n-1) {
 }
 tbody tr:hover {
     background-color: rgba(129,208,177,.3);
+}
+
+.events2 tbody tr:hover {
+    background-color: rgba(91, 192, 222, .2);
+}
+
+.events3 tbody tr:hover {
+    background-color: rgba(102, 102, 102, .15);
 }
 
 .join {
@@ -1897,6 +1822,11 @@ tbody tr:hover {
     padding-top: 20px;
 }
 
+.form3label {
+    text-align: left;
+    font-size: 0.7em;
+}
+
 .input {
   position: relative;
   z-index: 1;
@@ -1910,167 +1840,6 @@ tbody tr:hover {
     display: block;
     vertical-align: top;
   }
-
-.input__field {
-  position: relative;
-  display: block;
-  float: right;
-  padding: 0.8em;
-  width: 60%;
-  border: none;
-  border-radius: 0;
-  background: #f0f0f0;
-  color: #aaa;
-  font-weight: bold;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  -webkit-appearance: none; /* for box shadows to show on iOS */
-}
-
-.input__field:focus {
-  outline: none;
-}
-
-.input__label {
-  display: inline-block;
-  float: right;
-  padding: 0 1em;
-  width: 40%;
-  color: #000;
-  font-weight: bold;
-  font-size: 72%;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.input__label-content {
-  position: relative;
-  display: block;
-  padding: 1.6em 0;
-  width: 100%;
-}
-
-.graphic {
-  position: absolute;
-  top: 0;
-  left: 0;
-  fill: none;
-}
-
-.icon {
-  color: #ddd;
-  font-size: 150%;
-}
-
-.input--hoshi {
-  overflow: hidden;
-}
-
-.input__field--hoshi {
-  margin-top: 1em;
-  padding: 0.6em 0 1em 0;
-  width: 100%;
-  background: transparent;
-  color: #595F6E;
-}
-
-.input__label--hoshi {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 0 0.25em;
-  width: 100%;
-  height: calc(100% - 1em);
-  text-align: left;
-  pointer-events: none;
-}
-
-.input__label-content--hoshi {
-  position: absolute;
-}
-
-.input__label--hoshi::before,
-.input__label--hoshi::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: calc(100% - 10px);
-  border-bottom: 1px solid #B9C1CA;
-}
-
-.input__label--hoshi::after {
-  margin-top: 2px;
-  border-bottom: 4px solid red;
-  -webkit-transform: translate3d(-100%, 0, 0);
-  transform: translate3d(-100%, 0, 0);
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-}
-
-.input__label--hoshi-color-1::after {
-  border-color: hsl(200, 100%, 50%);
-}
-
-.input__label--hoshi-color-2::after {
-  border-color: hsl(160, 100%, 50%);
-}
-
-.input__label--hoshi-color-3::after {
-  border-color: hsl(20, 100%, 50%);
-}
-
-.input__field--hoshi:focus + .input__label--hoshi::after,
-.input--filled .input__label--hoshi::after {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-.input__field--hoshi:focus + .input__label--hoshi .input__label-content--hoshi,
-.input--filled .input__label-content--hoshi {
-  -webkit-animation: anim-1 0.3s forwards;
-  animation: anim-1 0.3s forwards;
-}
-
-@-webkit-keyframes anim-1 {
-  50% {
-    opacity: 0;
-    -webkit-transform: translate3d(1em, 0, 0);
-    transform: translate3d(1em, 0, 0);
-  }
-  51% {
-    opacity: 0;
-    -webkit-transform: translate3d(-1em, -40%, 0);
-    transform: translate3d(-1em, -40%, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, -40%, 0);
-    transform: translate3d(0, -40%, 0);
-  }
-}
-
-@keyframes anim-1 {
-  50% {
-    opacity: 0;
-    -webkit-transform: translate3d(1em, 0, 0);
-    transform: translate3d(1em, 0, 0);
-  }
-  51% {
-    opacity: 0;
-    -webkit-transform: translate3d(-1em, -40%, 0);
-    transform: translate3d(-1em, -40%, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, -40%, 0);
-    transform: translate3d(0, -40%, 0);
-  }
-}
 
 
 /* Form2*/
@@ -2147,12 +1916,13 @@ Max width before this PARTICULAR table gets nasty
 This query will take effect for any screen smaller than 760px
 and also iPads specifically.
 */
-@media 
-only screen and (max-width: 680px),
+@media only screen and (max-width: 680px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
 
   /* Force table to not be like tables anymore */
-  .events table, .events thead, .events tbody, .events th, .events td, .events tr { 
+  .events table, .events thead, .events tbody, .events th, .events td, .events tr, 
+  .events2 table, .events2 thead, .events2 tbody, .events2 th, .events2 td, .events2 tr,
+  .events3 table, .events3 thead, .events3 tbody, .events3 th, .events3 td, .events3 tr { 
     display: block; 
   }
   
@@ -2205,7 +1975,101 @@ only screen and (max-width: 680px),
   .events td:nth-of-type(4):before { content: "Budget"; }
   .events td:nth-of-type(5):before { content: "Joined"; }
 
+
+/*
+  YOUR TRAVELS
+  */
+
+  .events2 thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  .events2 tr { 
+    border: 1px solid #5bc0de;   
+    margin-top: 16px;
+    padding-bottom: 3%;
+    padding-top: 3%;
+  }
+  
+  .events2 td { 
+    /* Behave  like a "row" */
+    border: none;
+    position: relative;
+    padding-left: 50%; 
+  }
+  
+  .events2 td:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+  }
+
+  /*
+  Label the data
+  */
+  .events2 td:nth-of-type(1):before { content: "Place"; }
+  .events2 td:nth-of-type(2):before { content: "Date"; }
+  .events2 td:nth-of-type(3):before { content: "Days"; }
+  .events2 td:nth-of-type(4):before { content: "Budget"; }
+  .events2 td:nth-of-type(5):before { content: "Joined"; }
+
+
+/*
+  SUCCESSFUL TRAVELS
+  */
+
+  .events3 thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  .events3 tr { 
+    border: 1px solid #666;   
+    margin-top: 16px;
+    padding-bottom: 3%;
+    padding-top: 3%;
+  }
+  
+  .events3 td { 
+    /* Behave  like a "row" */
+    border: none;
+    position: relative;
+    padding-left: 50%; 
+  }
+  
+  .events3 td:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+  }
+
+  /*
+  Label the data
+  */
+  .events3 td:nth-of-type(1):before { content: "Place"; }
+  .events3 td:nth-of-type(2):before { content: "Date"; }
+  .events3 td:nth-of-type(3):before { content: "Days"; }
+  .events3 td:nth-of-type(4):before { content: "Budget"; }
+  .events3 td:nth-of-type(5):before { content: "Joined"; }
+
+  .area4 h2 {
+    margin-bottom: 10px;
+  }
+
 }
+
+
 
 .mainhead {
   margin: 0 0 20px;
@@ -2227,6 +2091,12 @@ only screen and (max-width: 680px),
 .mainhead3 {
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+
+.mainhead4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: normal;
 }
 
 .totaltravels {
@@ -2851,7 +2721,6 @@ h2 .label {
 
         /*DROPPPPPPPPPPPPZ*/
 
-
 .panel2 {
     margin-bottom: -1px;
     background-color: #fff;
@@ -2878,17 +2747,78 @@ h2 .label {
   width: 100%;
 }
 
-.name {
-  font-size: 4rem;
-  font-weight: bold;
-  text-transform: uppercase;
+.profileinfo {
+  padding-left: 20px;
+
 }
 
-.totaltravelsprofile {
-  text-transform: uppercase; 
+    .totaltravelsprofile {
+      text-transform: uppercase;
+      margin-top: 16px;
+    }
+
+    .labeltravels {
+      font-size: 12px;
+      vertical-align: middle;
+    }
+
+    .nameprofile {
+      margin-top: 10px;
+    }
+
+    .profilebig {
+    }
+
+    .bio {
+      line-height: 1.2;
+    }
+
+    .yourevents {
+    background-color: #5bc0de;
+    font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
+    }
+
+    .editbuttons {
+      float: right;
+    }
+
+    .profilebtn {
+    margin: 2px 2px 0 2px;
+    color: #bbb;
+    background-color: #eee;
+    border-color: #ddd;
+     }
+
+     .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+    z-index: 2;
+    color: #fff;
+    background-color: #05B68D;
+    border-color: #05B68D;
+    font-size: 14px;
+    }
+
+    .list-group-item {
+    font-size: 14px;
+    }
+
+    .editprofileforms {
+    margin-bottom: 60px;
+    }
+
+
+.imagechange {
+    max-width:150px;
+    min-width: 100px;
+    max-height: 150px;
+    min-width: 100px;
+    display: inline-block;
 }
 
-.nameprofile {
-  font-weight: bold;
-  text-transform: uppercase;
+.editpic {
+  font-size: 88%;
+  display: inline-block;
 }
+
+

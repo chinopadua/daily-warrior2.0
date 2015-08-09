@@ -2430,13 +2430,13 @@ output {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
+  -webkit-transition: border-color ease-in-out 0.2s, box-shadow ease-in-out 0.2s;
+  -o-transition: border-color ease-in-out 0.2s, box-shadow ease-in-out 0.2s;
+  transition: border-color ease-in-out 0.2s, box-shadow ease-in-out 0.2s; }
   .form-control:focus {
     border-color: #00FFAA;
     outline: 0;
-    border-width: 3px; }
+    border-width: 2px; }
   .form-control::-moz-placeholder {
     color: #c8cbcf;
     opacity: 1; }
