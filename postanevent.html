@@ -61,6 +61,7 @@
 						        <li><a href="index.html"><i class="fa fa-sign-out"></i>&nbsp; Logout</a></li>
 					        </ul>
 			           	</li>
+			           	<li class=""><a href="pin.html"><i class="fa fa-map-pin"></i> 2</a></li>
 			           	<li class=""><a href="notifications.html"><i class="fa fa-plane"></i> <span class="badge">4</span></a></li>
 				    </ul>
 				    <div class="drop-holder visible-sm visible-xs">
@@ -79,21 +80,19 @@
 	<section class="area suggestpage">
 		<div class="container">
 			<div class="row">
-
 				<div class="col-md-12">
 					<section class="content form">
-							<h2 class="mainhead2"> Post an Event</h2>
-							<form action="postaneventreview.html" method="get">
-								<div class="centeredtext">
+						<h2 class="mainhead2"> Post an Event</h2>
+						<form action="postaneventreview.html" method="get">
 
-									<!--Where-->
-									<div class="row">
-										<div class="col-sm-7 col-xs-12">
-											<span class="input">
-												<label class="form2label form2label-content"><span>Where</span></label>
-												<input class="form-control" type="text" id="where" required>	
-											</span>
-										</div>	
+								<!--Where-->
+								<div class="row">
+									<div class="col-sm-7 col-xs-12">
+										<span class="input">
+											<label class="form2label form2label-content"><span>Title</span></label>
+											<input class="form-control" type="text" id="where" required>	
+										</span>
+									</div>	
 
 										<!--Cost-->
 										<div class="col-sm-5 col-xs-12">
@@ -137,8 +136,9 @@
 									<!--Heads Up-->
 									<span class="input">
 										<label class="form2label form2label-content"><span>Heads up</span></label>
-										<textarea class="form-control" rows="3" type="text" id="headsup" placeholder="There’s no electricity in the island etc."></textarea>
-									</span>	
+										<textarea class="form-control" rows="3" type="text" id="headsup"></textarea>
+									</span>
+									<p class="ital"><a href="post.html" target="_blank">Lost? Here's a good example </a></p>	
 
 									<!--Trip Schedule-->
 									<div class="row">
@@ -176,77 +176,6 @@
 										    </div>
 										</div>
 									</div>	
-
-									<!--Cost Covered-->
-									<div class="row">
-										<div class="col-sm-6 col-xs-12">
-											<form method="POST">
-											     <label class="form2label form2label-content"><span>Cost Covered</span> (click + to add more)</label>
-											    <div id="dynamicInput">
-											     	<div class="input-group" type="button">
-														<div class="input-group-addon arrow" value="Add" onClick="addInput('dynamicInput');"><i class="fa fa-plus"></i></div>
-														<input class="form-control" class="form-control" id="costcovered" type="text" name="myInputs[]">
-													</div>
-											    </div>
-											</form>
-										</div>
-
-										<!--Need to bring-->
-										<div class="col-sm-6 col-xs-12">
-											<form method="POST">
-											    <label class="form2label form2label-content"><span>Excluded (optional)</span></label>
-											    <div id="dynamicInput2">
-											     	<div class="input-group" type="button">
-														<div class="input-group-addon arrow" value="Add" onClick="addInput('dynamicInput2');"><i class="fa fa-plus"></i></div>
-														<input class="form-control" class="form-control" id="costcovered" type="text" name="myInputs[]">
-													</div>
-											    </div>
-											</form>
-										</div>
-									</div>
-
-									<!--Need to Bring-->
-									<div class="row">
-										<div class="col-sm-4 col-xs-12">
-											<form method="POST">
-											    <label class="form2label form2label-content"><span>Need to Bring</span></label>
-											    <div id="dynamicInput3">
-											     	<div class="input-group" type="button">
-														<div class="input-group-addon arrow" value="Add" onClick="addInput('dynamicInput3');"><i class="fa fa-plus"></i></div>
-														<input class="form-control" class="form-control" id="costcovered" type="text" name="myInputs[]">
-													</div>
-											    </div>
-											</form>
-										</div>
-
-										<!--Island Offers-->
-										<div class="col-sm-4 col-xs-12">
-											<form method="POST">
-											    <label class="form2label form2label-content"><span>Things you can do</span></label>
-											    <div id="dynamicInput4">
-											     	<div class="input-group" type="button">
-														<div class="input-group-addon arrow" value="Add" onClick="addInput('dynamicInput4');"><i class="fa fa-plus"></i></div>
-														<input class="form-control" class="form-control" id="costcovered" type="text" name="myInputs[]">
-													</div>
-											    </div>
-											</form>
-										</div>
-
-										<!--Need to bring-->
-										<div class="col-sm-4 col-xs-12">
-											<form method="POST">
-											    <label class="form2label form2label-content"><span>Optional Expense</span></label>
-											    <div id="dynamicInput5">
-											     	<div class="input-group" type="button">
-														<div class="input-group-addon arrow" value="Add" onClick="addInput('dynamicInput5');"><i class="fa fa-plus"></i></div>
-														<input class="form-control" class="form-control" id="costcovered" type="text" name="myInputs[]">
-													</div>
-											    </div>
-											</form>
-										</div>
-									</div>
-
-
 									<!--The Place-->
 										
 
@@ -270,7 +199,7 @@
 										<div class="col-sm-4 col-xs-12">
 											<span class="input">
 												<label class="form2label form2label-content"><span>Google Map URL</span></label>
-												<input class="form-control" type="url" id="googleurl" placeholder="https://www.google.com/maps/d/u/0/embed?mid=zk5jyOXF3hb4.keAG7ybEgOj0">	
+												<input class="form-control" type="url" id="googleurl">	
 											</span>
 										</div>	
 									</div>

@@ -42,7 +42,7 @@
 
 				 <div class="nav-drop">
 				    <ul class="nav navbar-nav">
-				    	<li class="active visible-sm visible-xs"><a href="index3.html">Home</a></li>
+				    	<li class="visible-sm visible-xs"><a href="index3.html">Home</a></li>
 				    	<li class=""><a href="#">Blog</a></li>
 				    	<li class=""><a href="faq.html">FAQ's</a></li>
 				    </ul>
@@ -50,17 +50,18 @@
 				    <!-- Profile-->
 				    <ul class="nav navbar-nav navbar-right">
 				    	<li class=""><a href="postanevent.html">Post</a></li>
-				      	<li class="dropdown">
+				      	<li class="dropdown active">
 				            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
 				            	<img class="img-circle profile" src="static/images/user-03.jpg" alt="budoy" width="20" />&nbsp; Budoy Ako<span class="caret"></span>
 				            </a>
 					        <ul class="dropdown-menu profilemenu" role="menu">
 						        <li class=""><a href="profileowner.html"><i class="fa fa-user"></i>&nbsp; Profile </a></li>
-						        <li class=""><a href="events.html"><i class="fa fa-plane"></i>&nbsp; Event</a></li>
+						        <li class="active"><a href="events.html"><i class="fa fa-plane"></i>&nbsp; Event</a></li>
 						        <li class=""><a href="editprof.html"><i class="fa fa-wrench"></i>&nbsp; Settings</a></li>
 						        <li><a href="index.html"><i class="fa fa-sign-out"></i>&nbsp; Logout</a></li>
 					        </ul>
 			           	</li>
+			           	<li class=""><a href="pin.html"><i class="fa fa-map-pin"></i> 2</a></li>
 			           	<li class=""><a href="notifications.html"><i class="fa fa-plane"></i> <span class="badge">4</span></a></li>
 				    </ul>
 				    <div class="drop-holder visible-sm visible-xs">
@@ -76,131 +77,30 @@
 
 		</div>
 	</header>
-	<section class="main">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-offset-1 col-md-10">
-					<h2 class="mainhead"><i class="fa fa-rocket"></i> Upcoming travels</h2>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="area">
+	<section class="area suggestpage marginbottom60">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<table class="events">
-						<thead>
-							<tr>
-								<th>Place</th>
-								<th>Date</th>
-								<th>Days</th>
-								<th>Cost</th>
-								<th>Joined</th>
-								<th></th>
-							</tr>
-						</thead>
-						<tbody>
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="mainhead2">You have <i class="fa fa-map-pin"></i> 2 </h2>
+						</div>
+					</div>
 
-							<tr class="tableclick" onclick="window.document.location='post.html';">
-								<td class="event"> Cagbalete Island <span class="label label-warning">DW</span></td>
-								<td class="date">June 27, 2015 - June 29, 2015</td>
-								<td class="day">3 Days</td>
-								<td class="cost">₱ 1200.00</td>
-								<td class="joined">4/10</td>
-								<td class="join"><a href="post.html" class="btn btn-info join">Join </a></td>
-							</tr>
+					<hr>
 
-							<tr class="tableclick" onclick="window.document.location='post.html';">
-								<td class="event"> Cagbalete Island <span class="label label-info">Verified</span></td>
-								<td class="date">June 27, 2015 - June 29, 2015</td>
-								<td class="day">3 Days</td>
-								<td class="cost">₱ 1200.00</td>
-								<td class="joined">4/10</td>
-								<td class="join"><a href="post.html" class="btn btn-info join">Join </a></td>
-							</tr>
-							<tr class="tableclick" onclick="window.document.location='post.html';">
-								<td class="event"> Pico De Loro <span class="label label-danger">Full</span></td>
-								<td class="date">October 1, 2015 - October 3, 2015</td>
-								<td class="day">3 Days</td>
-								<td class="cost">₱ 1200.00</td>
-								<td class="joined red">10/10</td>
-								<td class="join"><a href="#" class="btn btn-danger join">Join </a></td>
-							</tr>
-						
-						</tbody>
-					</table>
-
-		<!--PAGINATION   <nav class="centered margintop100"> 
-					  <ul class="pagination"> 
-					    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-					    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-					    <li><a href="#">2</a></li>
-					    <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-					  </ul>
-					</nav>    -->
+					<div class="row">
+						<div class="col-md-12">
+							<h4 class="totaltravelsprofile">What is this? </h4>
+							<p>This is Pin <i class="fa fa-map-pin"></i> <br> This is your ticket to join or post a travel <br> Every successful travel will grant you an extra <i class="fa fa-map-pin"></i> 1</p>
+						</div>
+					</div>
+					
 					
 				</div>
 			</div>
 		</div>
 	</section>
-
-	<section class="pasttravels">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2 class="mainhead2"> Past Destinations</h2>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="area marginbottom30">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<table class="events">
-						<thead>
-							<tr>
-								<th class="past">Place</th>
-								<th class="past">Date</th>
-								<th class="past">Time</th>
-								<th class="past">Budget</th>
-							</tr>
-						</thead>
-						<tbody>
-
-							<tr class="tableclick" onclick="window.document.location='cagbalete.html';">
-								<td class="event"> Cagbalete Island <a/></td>
-								<td class="date"> June 27, 2015 - June 29, 2015<a/></td>
-								<td class="day"> 3 Days<a/></td>
-								<td class="cost"> ₱ 1200.00<a/></td>
-							</tr>
-
-							<tr class="tableclick" onclick="window.document.location='kalanggaman.html';">
-								<td class="event"> Kalanggaman Island <a/></td>
-								<td class="date"> April 15, 2015 - April 17, 2015<a/></td>
-								<td class="day"> 3 Days<a/></td>
-								<td class="cost"> ₱ 8000.00<a/></td>
-							</tr>
-								
-						</tbody>
-					</table>
-				</div>
-			</div>
-		</div>	
-	</section>
-
-<!--	<section class="area bg-semiwhite">
-		<div class="container featured">
-			<div class="row">
-				<div class="col-sm-12">
-					<h4 class="mainhead2"><i class="fa fa-star yellow marginbottom10"></i> Featured this week </h4>
-					<a href="past.html"><img src="http://i.imgur.com/huB3h9U.jpg" class="responsive"></a>
-				</div>
-			</div>
-		</div> 
-	</section> -->
 	
 	<footer id="footer">
 		<div class="container">
@@ -242,40 +142,5 @@
 <script src="static/js/bootstrap.js"></script>
 <script src="static/js/jquery.main.js"></script>
 <script src="static/js/classie.js"></script>
-<script>
-	(function() {
-	// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
-	if (!String.prototype.trim) {
-		(function() {
-		// Make sure we trim BOM and NBSP
-			var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
-			String.prototype.trim = function() {
-			return this.replace(rtrim, '');
-			};
-		})();
-	}
-
-	[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
-	// in case the input is already filled..
-	if( inputEl.value.trim() !== '' ) {
-						classie.add( inputEl.parentNode, 'input--filled' );
-	}
-
-	// events:
-	inputEl.addEventListener( 'focus', onInputFocus );
-	inputEl.addEventListener( 'blur', onInputBlur );
-	} );
-
-	function onInputFocus( ev ) {
-		classie.add( ev.target.parentNode, 'input--filled' );
-	}
-
-	function onInputBlur( ev ) {
-		if( ev.target.value.trim() === '' ) {
-							classie.remove( ev.target.parentNode, 'input--filled' );
-			}
-		}
-	})();
-</script>
 </body>
 </html>

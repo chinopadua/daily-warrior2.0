@@ -61,6 +61,7 @@
 						        <li><a href="index.html"><i class="fa fa-sign-out"></i>&nbsp; Logout</a></li>
 					        </ul>
 			           	</li>
+			           	<li class=""><a href="pin.html"><i class="fa fa-map-pin"></i> 2</a></li>
 			           	<li class=""><a href="notifications.html"><i class="fa fa-plane"></i> <span class="badge">4</span></a></li>
 				    </ul>
 				    <div class="drop-holder visible-sm visible-xs">
@@ -92,6 +93,7 @@
 				<div class="text-box2 col-md-8">
 					<div>
 						<h2 class="toptitle">Cagbalete Island <span class="label label-success">Available</span></h2> <!--PLACE-->
+						<h4 class="postedby">by <a href="#"> Daily Warrior</a></h4>
 						<h3 class="topdays">3 Days & 2 Nights</h3> <!--DAYS-->
 						<h4 class="dated"><a href="#"><i class="fa fa-calendar"></i>&nbsp; June 9, 2015 - June 11, 2015</a></h4> <!--WHEN-->
 						
@@ -122,7 +124,7 @@
 
 					<div class="note">
 						<h3 class="topdays"> Heads up: </h3>
-						<p>There’s no electricity on the island during day time. Charging gadgets will be available at night but permission is needed at the resort. There will be an estimated 250m walking to the resort. Sari-sari stores are available but 250m walk again is needed, be prepared. Cooking station is available at the resort.</p>
+						<li>There’s no electricity on the island during day time. Charging gadgets will be available at night but permission is needed at the resort. There will be an estimated 250m walking to the resort. Sari-sari stores are available but 250m walk again is needed, be prepared. Cooking station is available at the resort.</li>
 					</div>
 
 					<div class="needtobring">
@@ -247,80 +249,16 @@
 		</div>
 	</section>
 
-	<section class="area bg-semiwhite" id="join">
-		<div class="container paddingtop50">
-			<div class="row">
-
-				<div class="col-md-6">
-					<section class="content form">
-							<h2 class="mainhead2"><i class="fa fa-road"></i> Join the travel</h2>
-							<form action="thankyou.html" method="get">
-								<div class="centeredtext">
-
-									<!--Name-->
-									<span class="input">
-										<label class="form2label form2label-content"><span>First Name & Last Name</span></label>
-										<input class="form-control" type="text" id="name" required placeholder="Juan Dela Cruz">	
-									</span>
-
-									<!--Email-->
-									<span class="input">
-										<label class="form2label form2label-content"><span>Email</span></label>
-										<input class="form-control" type="email" id="email" required placeholder="juandelacruz@dailywarrior.ph">	
-									</span>
-
-									<!--Mobile Number-->
-									<span class="input">
-										<label class="form2label form2label-content"><span>Mobile Number</span></label>
-										<input class="form-control" type="text" id="contactnumber" required placeholder="0999 999 9999">	
-									</span>
-
-									<!--Message -->
-									<span class="input">
-										<label class="form2label form2label-content"><span>Message</span></label>
-										<textarea class="form-control" rows="3" type="text" id="message" placeholder="I'm allergic to peanuts"></textarea>
-									</span>	
-
-										<a href="#">
-											<button type="submit" class="btn btn-success margintop10">Warrior Attack!</button>
-										</a>
-
-								</div>
-							</form>
-					</section>				
-				</div>
-
-				<div class="col-md-4 joinside">
-					
-
-					<div class="panel panel-default bg-semiwhite">
-						<div class="panel-body">
-							<h4>Meeting place: </h4>
-								Farmers Plaza Beside Puregold
-						</div>
-					</div>
-
-					<div class="panel panel-default bg-semiwhite">
-						<div class="panel-body">
-							<!-- Map -->
-						    <section id="map" class="map">
-						    	<iframe width="100%" height="360px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/d/u/0/embed?mid=zk5jyOXF3hb4.keAG7ybEgOj0" width="640" height="480">
-						    	</iframe>
-						    </section>
-						</div>
-					</div>
-
-						<!--sample ad
-						<div class="panel panel-default">
-							<div class="panel-body">
-								<img class="centered" src="static/images/adsam.jpg">
-							</div>
-						</div>
-							-->
-									
-				</div>	
-
+	<!-- Map -->
+	<section class="area bg-semiwhite">
+		<div class="container">
+			<div class="note">
+				<h3 class="topdays">Meeting Place: </h3>
+				<li>Farmers Plaza Beside Puregold</li>
 			</div>
+			<section id="map" class="map margintop20">
+				<iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/d/u/0/embed?mid=zk5jyOXF3hb4.keAG7ybEgOj0" width="640" height="480"></iframe>
+			</section>
 		</div>
 	</section>
 					
@@ -365,41 +303,6 @@
 <script src="static/js/bootstrap.js"></script>
 <script src="static/js/jquery.main.js"></script>
 <script src="static/js/classie.js"></script>
-<script>
-	(function() {
-	// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
-	if (!String.prototype.trim) {
-		(function() {
-		// Make sure we trim BOM and NBSP
-			var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
-			String.prototype.trim = function() {
-			return this.replace(rtrim, '');
-			};
-		})();
-	}
-
-	[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
-	// in case the input is already filled..
-	if( inputEl.value.trim() !== '' ) {
-						classie.add( inputEl.parentNode, 'input--filled' );
-	}
-
-	// events:
-	inputEl.addEventListener( 'focus', onInputFocus );
-	inputEl.addEventListener( 'blur', onInputBlur );
-	} );
-
-	function onInputFocus( ev ) {
-		classie.add( ev.target.parentNode, 'input--filled' );
-	}
-
-	function onInputBlur( ev ) {
-		if( ev.target.value.trim() === '' ) {
-							classie.remove( ev.target.parentNode, 'input--filled' );
-			}
-		}
-	})();
-</script>
 <script src="static/js/imgs.js"></script>
 </body>
 </html>

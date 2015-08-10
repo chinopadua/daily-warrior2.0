@@ -123,11 +123,11 @@ p {
   }
   
   #nav li {
-    display: inline-block;
     vertical-align: top;
     line-height: 24px;
     letter-spacing: 0;
-    white-space: normal;}
+    white-space: normal;
+  }
 
 
 .nav-opener {
@@ -1207,7 +1207,9 @@ p {
           padding: 0; }
           #nav .nav-drop .drop-holder ul li {
             padding: 0;
-            margin: 0; }
+            margin: 0;
+            display: inline-block;
+            }
           #nav .nav-drop .drop-holder ul li + li {
             margin: 0 0 0 20px; }
           #nav .nav-drop .drop-holder ul a {
@@ -1401,6 +1403,12 @@ p {
   
 
 @media only screen and (max-width: 479px) {
+
+  .postedby {
+    font-size: 14px;
+    margin-top: 0px;
+  }
+
 
   .textleft {
     float: none;
@@ -1630,6 +1638,11 @@ p {
     width: 100%;
   }
 
+ .yourguests {
+    margin: 0 auto;
+    width: 100%;
+  } 
+
 thead {
   font-size: 1em;
 }
@@ -1669,6 +1682,10 @@ tbody tr:hover {
 
 .events3 tbody tr:hover {
     background-color: rgba(102, 102, 102, .15);
+}
+
+.yourguests tbody tr:hover {
+    background-color: rgba(68, 50, 102, 0.1);
 }
 
 .join {
@@ -1922,7 +1939,8 @@ and also iPads specifically.
   /* Force table to not be like tables anymore */
   .events table, .events thead, .events tbody, .events th, .events td, .events tr, 
   .events2 table, .events2 thead, .events2 tbody, .events2 th, .events2 td, .events2 tr,
-  .events3 table, .events3 thead, .events3 tbody, .events3 th, .events3 td, .events3 tr { 
+  .events3 table, .events3 thead, .events3 tbody, .events3 th, .events3 td, .events3 tr,
+  .yourguests table, .yourguests thead, .yourguests tbody, .yourguests th, .yourguests td, .yourguests tr { 
     display: block; 
   }
   
@@ -2066,6 +2084,49 @@ and also iPads specifically.
   .area4 h2 {
     margin-bottom: 10px;
   }
+
+/*
+  YOUR TRAVELS
+  */
+
+  .yourguests thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  .yourguests tr { 
+    border: 1px solid #443266;   
+    margin-top: 16px;
+    padding-bottom: 3%;
+    padding-top: 3%;
+  }
+  
+  .yourguests td { 
+    /* Behave  like a "row" */
+    border: none;
+    position: relative;
+    padding-left: 50%; 
+  }
+  
+  .yourguests td:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+  }
+
+  /*
+ yourguests data
+  */
+  .yourguests td:nth-of-type(1):before { content: "Name"; }
+  .yourguests td:nth-of-type(2):before { content: "Email"; }
+  .yourguests td:nth-of-type(3):before { content: "Contact Number"; }
+  .yourguests td:nth-of-type(4):before { content: "Confirm"; }
+  .yourguests td:nth-of-type(5):before { content: "Is Done"; }
 
 }
 
@@ -2780,6 +2841,13 @@ h2 .label {
     white-space: nowrap;
     }
 
+    .yourgueststitle {
+    background-color: #443266;
+    font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
+    }
+
     .editbuttons {
       float: right;
     }
@@ -2821,4 +2889,20 @@ h2 .label {
   display: inline-block;
 }
 
+.postedby {
+  margin-top: 0px;
+}
 
+.whojoined {
+  font-size: 16px;
+}
+
+.ital {
+  font-size: 0.8em;
+  font-style: italic;
+  float: right;
+}
+
+.ital a {
+  color: #aaa;
+}
